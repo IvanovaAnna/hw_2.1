@@ -23,6 +23,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         redSlider.minimumTrackTintColor = .red
         greenSlider.minimumTrackTintColor = .green
+        redSlider.value = 0
+        greenSlider.value = 0
+        blueSlider.value = 0
     }
     
     func changeColor() {
@@ -31,6 +34,9 @@ class ViewController: UIViewController {
 
     @IBAction func rgbAction(_ sender: Any) {
         changeColor()
+        intensityRed.text = String(format: "%.2f", redSlider.value)
+        intensityGreen.text = String(format: "%.2f", greenSlider.value)
+        intensityBlue.text =  String(format: "%.2f", blueSlider.value)
     }
     
 }
