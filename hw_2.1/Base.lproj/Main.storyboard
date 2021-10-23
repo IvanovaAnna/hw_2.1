@@ -46,6 +46,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="22F-eK-XBT">
                                                 <rect key="frame" x="149" y="0.0" width="227" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="AyO-dA-kPe"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -72,6 +75,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-KM-2Z1">
                                                 <rect key="frame" x="133" y="0.0" width="243" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="6kb-MX-xgT"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -98,6 +104,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZdZ-3q-tol">
                                                 <rect key="frame" x="145" y="0.0" width="231" height="31"/>
+                                                <connections>
+                                                    <action selector="rgbAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="wJ6-ep-2Yr"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
@@ -115,6 +124,15 @@
                             <constraint firstItem="6ao-N6-2gN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XTQ-W2-AH3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="ZdZ-3q-tol" id="K6Z-EY-r15"/>
+                        <outlet property="colorView" destination="Kym-aq-tav" id="6QY-qC-yde"/>
+                        <outlet property="greenSlider" destination="s8t-KM-2Z1" id="P8D-Lo-kcd"/>
+                        <outlet property="intensityBlue" destination="xMR-Rr-MOq" id="FiU-Lr-TzM"/>
+                        <outlet property="intensityGreen" destination="iKY-sw-HJV" id="jzp-QR-jMh"/>
+                        <outlet property="intensityRed" destination="cnu-6j-PfZ" id="5Xg-1E-dzx"/>
+                        <outlet property="redSlider" destination="22F-eK-XBT" id="7cF-Dp-xCV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
