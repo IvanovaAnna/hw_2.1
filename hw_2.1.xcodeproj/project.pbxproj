@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FB450CF027240B2500737A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450CEF27240B2500737A9E /* AppDelegate.swift */; };
-		FB450CF227240B2500737A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450CF127240B2500737A9E /* SceneDelegate.swift */; };
-		FB450CF427240B2500737A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450CF327240B2500737A9E /* ViewController.swift */; };
+		FB450CF427240B2500737A9E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450CF327240B2500737A9E /* SettingsViewController.swift */; };
 		FB450CF727240B2500737A9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB450CF527240B2500737A9E /* Main.storyboard */; };
 		FB450CF927240B2900737A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB450CF827240B2900737A9E /* Assets.xcassets */; };
 		FB450CFC27240B2900737A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB450CFA27240B2900737A9E /* LaunchScreen.storyboard */; };
+		FB450D732735A96100737A9E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450D722735A96100737A9E /* Model.swift */; };
+		FB450D792735AAD400737A9E /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB450D782735AAD400737A9E /* MainScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB450CEC27240B2500737A9E /* hw_2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw_2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB450CEF27240B2500737A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB450CF127240B2500737A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB450CF327240B2500737A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB450CF327240B2500737A9E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FB450CF627240B2500737A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB450CF827240B2900737A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB450CFB27240B2900737A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB450CFD27240B2900737A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB450D722735A96100737A9E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FB450D782735AAD400737A9E /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		FB450CEE27240B2500737A9E /* hw_2.1 */ = {
 			isa = PBXGroup;
 			children = (
-				FB450CEF27240B2500737A9E /* AppDelegate.swift */,
-				FB450CF127240B2500737A9E /* SceneDelegate.swift */,
-				FB450CF327240B2500737A9E /* ViewController.swift */,
-				FB450CF527240B2500737A9E /* Main.storyboard */,
-				FB450CF827240B2900737A9E /* Assets.xcassets */,
-				FB450CFA27240B2900737A9E /* LaunchScreen.storyboard */,
-				FB450CFD27240B2900737A9E /* Info.plist */,
+				FB450D712735A92600737A9E /* ViewControllers */,
+				FB450D742735A96C00737A9E /* Models */,
+				FB450D752735A99D00737A9E /* Storyboards */,
+				FB450D762735A9B500737A9E /* SupportingFiles */,
+				FB450D772735A9CE00737A9E /* Resources */,
 			);
 			path = hw_2.1;
+			sourceTree = "<group>";
+		};
+		FB450D712735A92600737A9E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB450CF327240B2500737A9E /* SettingsViewController.swift */,
+				FB450D782735AAD400737A9E /* MainScreenViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB450D742735A96C00737A9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB450D722735A96100737A9E /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB450D752735A99D00737A9E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FB450CF527240B2500737A9E /* Main.storyboard */,
+				FB450CFA27240B2900737A9E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FB450D762735A9B500737A9E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FB450CEF27240B2500737A9E /* AppDelegate.swift */,
+				FB450CFD27240B2900737A9E /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		FB450D772735A9CE00737A9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB450CF827240B2900737A9E /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB450CF427240B2500737A9E /* ViewController.swift in Sources */,
+				FB450CF427240B2500737A9E /* SettingsViewController.swift in Sources */,
+				FB450D792735AAD400737A9E /* MainScreenViewController.swift in Sources */,
 				FB450CF027240B2500737A9E /* AppDelegate.swift in Sources */,
-				FB450CF227240B2500737A9E /* SceneDelegate.swift in Sources */,
+				FB450D732735A96100737A9E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
